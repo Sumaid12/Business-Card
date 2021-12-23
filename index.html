@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        .business-card {
+            width: 550px;
+            height: 300px;
+            max-width: 100%;
+            border-radius: 4px;
+            margin: 0 auto;
+        }
+
+        .business-card {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #fff 0%, #fff 50%, rgba(0, 200, 200, .4) 50.5%, rgba(0, 200, 200, .6) 100%);
+            color: rgba(0, 0, 0, .8);
+
+        }
+
+        .profile {
+            display: flex;
+            flex-basis: 150px;
+            width: 100%;
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+            padding: 15px;
+        }
+
+        .profile-image {
+            /*Change Image URL here below*/
+            background-image: url(https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80);
+            /*Change Image URL here above*/
+            background-position: center;
+            background-size: cover;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+        }
+
+        .profile-title {
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .profile-title h2 {
+            font-size: 1.4em;
+        }
+
+        .info {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .info-contact {
+            padding: 15px;
+            display: flex;
+            flex-shrink: 1;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .info-contact a {
+            color: rgba(0, 0, 0, .8);
+        }
+
+        .info-contact i {
+            font-size: 1.2em;
+            width: 25px;
+        }
+    </style>
+</head>
+<div class="business-card">
+    <div class="profile">
+        <div class="profile-image"></div>
+        <div class="profile-title">
+            <h2>John Doe</h2>
+            <h3>Company Name</h3>
+            <span>Front End Developer</span>
+        </div>
+    </div>
+    <div class="info">
+        <div class="info-contact">
+            <span><i class="fa fa-phone"></i> +00 11 22 33 44</span>
+            <!--Enter Phone Number-->
+            <span><i class="fa fa-at"></i> Jonh.Doe@xyz.com</span>
+            <!--Enter Email-->
+        </div>
+    </div>
+</div>
+
+
+<body>
+
+</body>
+
+</html>
